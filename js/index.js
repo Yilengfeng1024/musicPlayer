@@ -40,7 +40,7 @@
         }
 
         audio.ontimeupdate = function() {
-            $('.musicbox.progress-now').style.width = (this.currentTime/this.duration)*100 + '%'
+            $('.musicbox .progress-now').style.width = (this.currentTime/this.duration)*100 + '%'
         }
 
         Audio.onpaly = function() {
