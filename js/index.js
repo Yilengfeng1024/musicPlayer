@@ -49,16 +49,12 @@
         }
 
         Audio.onpaly = function() {
-            clock = setInterval(function(){
-                var min = Math.floor(audio.currentTime/60)
-                var sec = Math.floor(audio.currentTime)%60 + ''
-                sec = sec.length === 2? sec : '0' + sec
-                $('.progress .time').innerText = min + ':' +sec
-            },1000)
-        }
-
-        audio.onpause = function() {
-            clearInterval(clock)
+            clock = setInterval(function() {
+            var min = Math.floor(audio.currentTime/60)
+            var sec = Math.floor(audio.currentTime)%60 + ''
+            sec = sec.length == 2 ? sec : '0' + sec
+            $('.progress .time').innerText = min + ':' + sec
+           }, 1000)
         }
 
         audio.onended = function() {
@@ -70,12 +66,12 @@
         $('.musicbox .play').onclick = function() {
             if(audio.paused) {
                 audio.play()
-                this.querySelector('.iconfont').classList.add('icon-kaishi')
-                this.querySelector('.iconfont').classList.remove('icon-zanting')
-            }else {
-                audio.pause()
                 this.querySelector('.iconfont').classList.add('icon-zanting')
                 this.querySelector('.iconfont').classList.remove('icon-kaishi')
+            }else {
+                audio.pause()
+                this.querySelector('.iconfont').classList.add('icon-kaishi')
+                this.querySelector('.iconfont').classList.remove('icon-zanting')
             }
         }
 
@@ -101,7 +97,7 @@
             var percent = e.offsetY / parseInt(getComputedStyle(this).height)
             console.log(percent)
             audio.volume = percent
-            $('setvolume .volume .vol').style.height = percent*100 + '%'
+            $('.vol').style.height = percent*100 + '%'
         }
 
         $('.musicbox .list').onclick = function(e) {
