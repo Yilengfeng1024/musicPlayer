@@ -48,19 +48,19 @@
             $('.musicbox .progress-now').style.width = (this.currentTime/this.duration)*100 + '%'
         }
 
-        Audio.onpaly = function() {
+        audio.onplay = function() {
             clock = setInterval(function() {
             var min = Math.floor(audio.currentTime/60)
             var sec = Math.floor(audio.currentTime)%60 + ''
             sec = sec.length == 2 ? sec : '0' + sec
             $('.progress .time').innerText = min + ':' + sec
            }, 1000)
-            $$('.list>li').forEach(function(e) {
-            if (e.innerText.split('-')[0] === audio.title) {
-            e.classList.add('playing')
+            $$('.musiclist>li').forEach(function(e) {
+              if (e.innerText.split('-')[0] === audio.title) {
+               e.classList.add('playing')
            } else {
             e.classList.remove('playing')
-             }
+              }
           })
         }
 
