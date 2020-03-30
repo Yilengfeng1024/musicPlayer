@@ -43,6 +43,11 @@
         function $(selector) {
             return document.querySelector(selector)
         }
+        
+        function $$(selector) {
+            return document.querySelectorAll(selector)
+        }
+
 
         audio.ontimeupdate = function() {
             $('.musicbox .progress-now').style.width = (this.currentTime/this.duration)*100 + '%'
