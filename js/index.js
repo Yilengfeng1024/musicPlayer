@@ -32,7 +32,12 @@
         }
 
         function generateList(list) {
-
+             for (var i = 0; i < list.length; i++) {
+        var newLi = document.createElement('li')
+        var newContent = document.createTextNode(list[i].title + '-' + list[i].auther)
+        newLi.appendChild(newContent)
+        $('.musiclist').appendChild(newLi)
+           }
         }
 
         function $(selector) {
