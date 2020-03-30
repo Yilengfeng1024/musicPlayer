@@ -55,6 +55,13 @@
             sec = sec.length == 2 ? sec : '0' + sec
             $('.progress .time').innerText = min + ':' + sec
            }, 1000)
+            $$('.list>li').forEach(function(e) {
+            if (e.innerText.split('-')[0] === audio.title) {
+            e.classList.add('playing')
+           } else {
+            e.classList.remove('playing')
+             }
+          })
         }
 
         audio.onended = function() {
