@@ -36,7 +36,7 @@
         var newLi = document.createElement('li')
         var newContent = document.createTextNode(list[i].title + '-' + list[i].auther)
         newLi.appendChild(newContent)
-        $('.musiclist').appendChild(newLi)
+        $('.list').appendChild(newLi)
            }
         }
 
