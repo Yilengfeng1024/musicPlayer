@@ -99,7 +99,7 @@
             $('setvolume .volume .vol').style.height = percent*100 + '%'
         }
 
-        $('.music .list').onclick = function(e) {
+        $('.musicbox .list').onclick = function(e) {
             if(e.target.tagName.toLowerCase() === 'li'){
         for(var i = 0; i < this.children.length; i++){
           if(this.children[i] === e.target){
