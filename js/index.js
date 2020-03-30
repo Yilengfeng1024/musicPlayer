@@ -25,8 +25,8 @@
 
         function loadMusic(musicObj) {
             console.log('begin play',musicObj)
-            $('.musicbox.title').innerText = musicObj.title
-            $('.musicbox.auther').innerText = musicObj.auther
+            $('.musicbox .title').innerText = musicObj.title
+            $('.musicbox .auther').innerText = musicObj.auther
             $('.cover').style.backgroundImage = 'url('+musicObj.img+')'
             audio.src = musicObj.src
         }
