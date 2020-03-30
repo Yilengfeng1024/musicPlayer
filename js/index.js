@@ -53,7 +53,7 @@
                 var min = Math.floor(audio.currentTime/60)
                 var sec = Math.floor(audio.currentTime)%60 + ''
                 sec = sec.length === 2? sec : '0' + sec
-                $('.musicbox .time').innerText = min + ':' +sec
+                $('.progress .time').innerText = min + ':' +sec
             },1000)
         }
 
