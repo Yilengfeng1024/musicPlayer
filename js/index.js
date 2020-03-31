@@ -60,7 +60,7 @@
             sec = sec.length == 2 ? sec : '0' + sec
             $('.progress .time').innerText = min + ':' + sec
            }, 1000)
-            $$('.musiclist>li').forEach(function(e) {
+            $$('.list>li').forEach(function(e) {
               if (e.innerText.split('-')[0] === audio.title) {
                e.classList.add('playing')
            } else {
