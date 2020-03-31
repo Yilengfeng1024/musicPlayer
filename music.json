@@ -1,14 +1,26 @@
 [
-  {
-  "src": "http://cloud.hunger-valley.com/music/玫瑰.mp3",
-  "title": "玫瑰",
-  "auther": "贰佰",
-  "img": "http://cloud.hunger-valley.com/17-9-22/28212907.jpg"
- },
-  {
-  "src": "http://cloud.hunger-valley.com/music/ifyou.mp3",
-  "title": "IF YOU",
-  "auther": "Big Bang",
-  "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
- }
+    {
+        "src": "http://cloud.hunger-valley.com/music/玫瑰.mp3",
+        "title": "玫瑰",
+        "auther": "贰佰",
+        "img": "http://cloud.hunger-valley.com/17-9-22/28212907.jpg"
+    },
+    {
+        "src": "http://cloud.hunger-valley.com/music/ifyou.mp3",
+        "title": "IF YOU",
+        "auther": "Big Bang",
+        "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
+    },
+    {
+        "src": "/musicPlayer/music/买辣椒也用券 - 起风了.mp3",
+        "title": "起风了",
+        "auther": "买辣椒也用券",
+        "img": "http://ww1.sinaimg.cn/large/005Kx8k2ly1gdbrrsa0syj30u00bowfh.jpg"
+    },
+    {
+        "src": "/musicPlayer/music/筷子兄弟 - 老男孩.mp3",
+        "title": "老男孩",
+        "auther": "筷子兄弟",
+        "img": "http://ww1.sinaimg.cn/large/005Kx8k2ly1gdbrs4ys3rj30hs0bvmxq.jpg"
+    }
 ]
